@@ -1,0 +1,421 @@
+/*esto es un comentario de bloque de CSS puro*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(./img/fondo_blanco_ladrillo_cemento.jpg);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 100vh;
+}
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fa15fa;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1.6em;
+}
+
+.img {
+  position: center;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imagen {
+  width: 40%;
+  height: 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: last baseline;
+      -ms-flex-pack: last baseline;
+          justify-content: last baseline;
+  background-image: url(img/fondonegrorosa.webp);
+  background-repeat: repeat;
+  width: 100%;
+  height: 300%;
+  padding: 0%;
+}
+
+.logo-nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav ul li {
+  display: inline-block;
+}
+
+.main-nav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.main-header ul li a:hover {
+  background: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.Item {
+  border-radius: 1px;
+}
+
+.Item:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.grid-container > * {
+  border: 1px solid #fa15fa;
+  text-align: center;
+  background-color: #b13395;
+}
+
+.grid-texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: top;
+  width: 50%;
+}
+
+textarea {
+  background-position: left;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+.Contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 10vh;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px;
+}
+
+.redessociales a:hover {
+  background-color: grey;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.redessociales a:hover {
+  color: white;
+}
+
+.redessociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 50px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  cursor: pointer;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.redessociales a {
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 1 em;
+  color: #0a0909;
+  bottom: 0;
+  margin-top: auto;
+}
+
+nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nav;
+}
+
+.main-header {
+  grid-area: header;
+}
+
+.logo-nav-container {
+  grid-area: log-nav-con;
+}
+
+.main-nav {
+  grid-area: mainnav;
+}
+
+.content {
+  grid-area: contenido;
+}
+
+.grid-container {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: grid-container;
+}
+
+.textarea {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: textarea;
+}
+
+.contenedor {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: contenedor;
+}
+
+.footer {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+.fotos {
+  grid-area: fotos;
+}
+
+.galeria {
+  grid-area: galeria;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+      grid-template-areas: "nav" "main-header" "logo-nav-container" "main-nav" "content" "grid-container" "textarea" "contenedor" "footer";
+  border: 2px solid black;
+}
+
+.galeria {
+  grid-area: galeria;
+}
+
+.fotos {
+  grid-area: fotos;
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "galeria" "fotos fotos";
+  }
+  .galeria {
+    background-position: 49%;
+  }
+  .fotos {
+    background-position: 49%;
+  }
+}
+
+@media (min-width: 500px) {
+  .wrapper {
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "main-header" "nav" "logo-nav-container" "main-nav" "content" "grid-container" "textarea contenedor" "footer footer";
+  }
+  .nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: 1px solid black;
+    border: 2cm;
+  }
+  .grid-container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border: 1px solid black;
+    border: 2cm;
+  }
+  .footer {
+    display: block;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 501px) {
+  .wrapper {
+    -ms-grid-columns: 1fr 4fr 1fr;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: "header header header" "nav container" "nav container" "grid-container grid- container" "textarea textarea" "contenedor contenedor" "footer footer footer";
+  }
+  .nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border: 2px dotted dodgerblue;
+  }
+  .nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: 1px solid black;
+    border: 2cm;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 501px) and (max-width: 960px) {
+  .wrapper {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "header header header header" "nav nav nav nav" "container container container" "grid-container grid- container" "textarea textarea" "contenedor contenedor" "footer footer footer footer";
+  }
+}
+
+@media (min-width: 500px) {
+  body {
+    background-color: #fa15fa;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  header {
+    color: white;
+  }
+  footer {
+    display: contents;
+  }
+  /*Pedidos*/
+  .galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-position: right;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .galeria .fotos {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  .grid-container * {
+    border: 1px solid black;
+    text-align: center;
+    background-color: #b13395;
+  }
+  .fotos img {
+    width: 70%;
+    height: 210px;
+    border-radius: 5px;
+  }
+  .galeria .fotos img:hover {
+    opacity: 6;
+    cursor: pointer;
+    -webkit-transform: translate(0px, 15px);
+            transform: translate(0px, 15px);
+  }
+  .computer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 60%;
+  }
+  /*Pedidos*/
+  .galeria {
+    grid-area: galeria;
+  }
+  .fotos {
+    grid-area: fotos;
+  }
+}
+/*# sourceMappingURL=origen.css.map */

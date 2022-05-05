@@ -1,0 +1,80 @@
+/* Extends*/
+footer {
+    text-align: center;
+    padding: 1 em;
+    color:rgb(10, 9, 9);
+    bottom: 0;
+    margin-top: auto;
+
+}
+.footer--nuevo {
+    @extend .footer;
+    color: aquamarine;
+}
+.form{
+    color: black;
+    display: flex;
+    flex-direction:column;
+    margin: top;
+    width: 50%;
+ }
+ .form{
+    color: black;
+    display: flex;
+    flex-direction:column;
+    margin: top;
+    width: 50%;
+ }
+ .form--new {
+     @extend .form;
+     color:blueviolet;
+ }
+ 
+
+/*Mixing*
+// @mixing nombre (argumento1,argumento2){
+    width: argumento1;
+    height: argumento2;*/
+
+@mixin tamanio(valor1, valor2) {
+    height: $argumento1;
+    width: $argumento2;
+}
+.imagen {
+    @include tamanio (100px, 50px);
+}
+
+//mapas
+//nombremapa
+//clave : valor 
+
+/*nombrevariable 1:valor1;
+nombrevariable 2:valor2;*/
+$redess: (
+    /* clave: valor*/
+  facebook:   rgb(0, 255, 229),
+  instangram: rgb(255, 0, 234),
+  twitter: rgb(179, 0, 255),
+  youtube: rgb(0, 255, 21),
+
+);
+
+@each $redes,$colores in redess {
+    button-nuevo#($redes){
+        background-color: $colores,}
+}
+
+$estilos: (
+    color: rgb(255, 0, 225),
+    centro: center,
+    fuente: 25px
+);
+div {
+    background-color:map-get($estilos,color);
+    text-align:map-get($estilos, centro);
+    font-size:map-get($estilos, fuente);
+   }
+
+
+
+
