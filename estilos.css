@@ -18,6 +18,11 @@ h1 {
     text-align: center;
 
 }
+h2 {
+    font-size: medium;
+    color: black;
+
+}
 .content {
     padding: 0;
     margin: 15px;
@@ -40,6 +45,26 @@ p {
     align-items: center;
     justify-content: center;
 }
+.computer {
+    position: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 15px;
+    
+}
+.contactos{
+    display: flex;
+    padding: 2px;
+    margin: 15px;
+}
+.center {
+    position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 header{
     display: grid;
@@ -50,6 +75,8 @@ header{
     height: 300%;
     padding: 0%;
  }
+ 
+
  .logo-nav-container {
      display: flex;
      justify-content: space-between;
@@ -92,7 +119,11 @@ a {
 }
 .grid-texto {
     display: flex;
+    text-align: justify;
+    padding: 0;
+    margin: 15px;
 }
+
 .form{
     color: black;
     display: flex;
@@ -100,7 +131,10 @@ a {
     margin: top;
     width: 50%;
  }
-
+.grid-form {
+    padding: 15px;
+    margin: 15px;
+}
  textarea {
      background-position: left;
      margin: auto;
@@ -203,6 +237,27 @@ nav {
 }
 .fotos {
     grid-area: fotos;
+}
+.imagen {
+    width: 100%;
+    text-align: center;
+    flex-basis: 100px;
+}
+
+@media screen and (max-width: 300px) {
+    .wrapper {
+        flex-direction: column;
+        }
+        .main-header {
+            flex-direction: column;
+        }
+        .grid-container {
+            flex-basis: 100%;
+        }
+        .imagen{ 
+            flex-direction: column;
+            flex-basis: 100%;
+        }
 }
 @media screen and (max-width:500px){
     .wrapper {
